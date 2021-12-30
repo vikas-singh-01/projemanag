@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_member_member"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_person_dark"
+        app:civ_border_color="@color/darkPrimary"
+        app:civ_border_width="0.5dp"
+        android:layout_marginStart="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="16dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_member_name_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Member Name"
+            android:textColor="@color/darkPrimary"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_member_email_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Member email"
+            android:textSize="16sp"
+            android:textColor="@color/darkSecondary"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_member_selected"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical|end"
+        android:src="@drawable/ic_done"
+        android:layout_marginEnd="11dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/ll_selected_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="1dp"
+        android:orientation="vertical"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_selected_member_image"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:src="@drawable/ic_person_dark"
+            app:civ_border_color="@color/lightGrey"
+            app:civ_border_width="0.5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_selected_member_name"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Vikas"
+            android:textColor="@color/darkSecondary"
+            android:textSize="13sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_select_member"
+        android:layout_width="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="1dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_add_member"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:src="@drawable/ic_add"
+            app:civ_border_width="0.5dp"
+            app:civ_border_color="@color/darkPrimary"
+            />
+
+        <TextView
+            android:id="@+id/tv_select_member"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Member"
+            android:textColor="@color/darkSecondary"
+            android:textSize="11sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

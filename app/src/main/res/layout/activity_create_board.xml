@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    tools:context=".activities.CreateBoardActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_create_board"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE BOARD"
+            android:textColor="@color/darkPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_board_create_board"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="31dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:civ_border_color="@color/darkSecondary"
+        app:civ_border_width="1dp"
+        android:src="@drawable/ic_board"
+        />
+
+    <EditText
+        android:id="@+id/et_board_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/darkPrimary"
+        android:hint="Board Name"
+        android:theme="@style/AppThemeInput"
+        android:textColorHint="@color/textColorSecondary"
+        android:layout_margin="21dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_create_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE"
+        android:background="@drawable/shape_rounded_button_gradient"
+        android:foreground="?attr/selectableItemBackground"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:padding="11dp"
+        android:gravity="center"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        />
+
+</LinearLayout>

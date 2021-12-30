@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:background="@color/white"
+    android:padding="7dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_board_image_rv"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_board"
+        app:civ_border_color="@color/darkPrimary"
+        app:civ_border_width="0.5dp"
+        android:layout_marginStart="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="16dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_board_name_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Board Name"
+            android:textColor="@color/darkPrimary"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_created_by_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Created By"
+            android:textSize="16sp"
+            android:textColor="@color/darkSecondary"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

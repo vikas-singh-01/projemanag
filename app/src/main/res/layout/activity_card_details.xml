@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CardDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCardDetailsActivity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:layout_marginBottom="11dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_card_name_card_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Details"
+            android:textColor="@color/darkPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/et_card_name_card_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="11dp"
+        android:text="Card Name"
+        android:textSize="16sp"
+        android:textColor="@color/darkPrimary"
+        android:theme="@style/AppThemeInput"
+        android:hint="Card Name"
+        android:textColorHint="@color/textColorSecondary"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Label Color"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="14sp"
+        android:layout_margin="11dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_select_color_card_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Color"
+        android:textColor="@color/darkPrimary"
+        android:foreground="?attr/selectableItemBackground"
+        android:textSize="16sp"
+        android:paddingTop="11dp"
+        android:paddingBottom="11dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Members"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="14sp"
+        android:layout_margin="11dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_members_card_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:padding="11dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_select_members_card_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Members"
+        android:textColor="@color/darkPrimary"
+        android:foreground="?attr/selectableItemBackground"
+        android:textSize="16sp"
+        android:padding="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due Date"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="14sp"
+        android:layout_margin="11dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_select_due_date_card_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:padding="11dp"
+        android:text="Select Due Date"
+        android:foreground="?attr/selectableItemBackground"
+        android:textColor="@color/darkPrimary"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_update_card_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rounded_button_gradient"
+        android:text="UPDATE"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="11dp"
+        />
+
+
+</LinearLayout>
